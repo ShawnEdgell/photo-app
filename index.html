@@ -9,11 +9,11 @@
 <body>
     <div class="photos-container">
         <div class="photos-display">
-            <div class="image"><img src="/images/marco-d-abramo-Us6PXYI-3vU-unsplash.jpg" alt="Imgage 1"></div>
-            <div class="image"><img src="/images/tom-barrett-M0AWNxnLaMw-unsplash.jpg" alt="Imgage 2"></div>
-            <div class="image"><img src="/images/maxence-malak-RmO4_X4rImc-unsplash.jpg" alt="Imgage 3"></div>
-            <div class="image"><img src="/images/zhenyu-luo-14sgNCaw2NI-unsplash.jpg" alt="Imgage 4"></div>
-            <div class="image"><img src="/images/daniel-diemer-jbnhrF90Ew0-unsplash.jpg" alt="Imgage 5"></div>
+            <div class="image"><img draggable="true" src="/images/marco-d-abramo-Us6PXYI-3vU-unsplash.jpg" alt="Imgage 1"></div>
+            <div class="image"><img draggable="true" src="/images/tom-barrett-M0AWNxnLaMw-unsplash.jpg" alt="Imgage 2"></div>
+            <div class="image"><img draggable="true" src="/images/maxence-malak-RmO4_X4rImc-unsplash.jpg" alt="Imgage 3"></div>
+            <div class="image"><img draggable="true" src="/images/zhenyu-luo-14sgNCaw2NI-unsplash.jpg" alt="Imgage 4"></div>
+            <div class="image"><img draggable="true" src="/images/daniel-diemer-jbnhrF90Ew0-unsplash.jpg" alt="Imgage 5"></div>
             <!-- ... add as many photos as you have -->
         </div>
     </div>
@@ -21,6 +21,8 @@
         <span class="close">&times;</span>
         <img class="modal-content" id="modalImage">
     </div>
+    <div id="drag-container" style="position: fixed; top: -100%; left: -100%; width: 50px; height: 50px; z-index: 9999;"></div>
+    <div id="drag-preview" style="visibility: hidden; position: absolute; top: 0; left: 0; z-index: -1;"></div>
 </body>
 <script src="app.js"></script>
 </html>
