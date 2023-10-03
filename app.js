@@ -72,4 +72,3 @@ image.addEventListener('dragstart', function (e) {
 });
 
 
-
